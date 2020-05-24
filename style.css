@@ -1,16 +1,36 @@
 /* Entire Document */
 
-/* *{
+*{
     border: 1px solid black
-} */
+}
 
 /* Header */
+header > h1 {
+    text-align: center;
+}
+
+header > nav {
+    float: right;
+    margin-top: 70px;
+}
+
 header > nav > ul > li {
     background-color: rgb(152, 234, 236);
     border: 2px solid rgb(33, 60, 216);
+    display: inline-block;
+    width: 100px;
+    border-radius: 25px;
+    margin: 5px;
+    text-align: center
 }
 
 /* Main */
+body {
+    margin: 0px auto;
+    width: 960px;
+    background-color: rgb(161, 148, 131);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
 
 
 /* Footer */
