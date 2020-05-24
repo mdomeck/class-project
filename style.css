@@ -1,0 +1,20 @@
+/* Entire Document */
+
+/* *{
+    border: 1px solid black
+} */
+
+/* Header */
+header > nav > ul > li {
+    background-color: cadetblue;
+    border: 2px dashed yellowgreen;
+}
+
+/* Main */
+
+
+/* Footer */
+p {
+    color: red; 
+    background-color: aqua;
+}
