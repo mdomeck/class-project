@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ipperwash Beach</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/app.js"></script>
 </head>
 
 <body>
-<header>
-    <h1>Come to Ipperwash Beach</h1>
+    <header>
+        <h1>Come to Ipperwash Beach</h1>
 
-    <img src="images/ipperwash-landscape.jpg" alt="Beach on Lake Huron">
+        <img src="images/ipperwash-landscape.jpg" alt="Beach on Lake Huron">
 
-    <nav>
-        <ul>
-            <li id="id-first"><a href="Home"> Home</a></li>
-            <li class="navbar"><a href="Community"> Community</a></li>
-            <li class="navbar"><a href="News"> News</a></li>
-            <li class="navbar"><a href="Contact"> Contact</a></li>
-        </ul>
-    </nav>
-</header> 
+        <nav>
+            <ul>
+                <li id="id-first"><a href="Home"> Home</a></li>
+                <li class="navbar"><a href="Community"> Community</a></li>
+                <li class="navbar"><a href="News"> News</a></li>
+                <li class="navbar"><a href="Contact"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <script src="js/ask-name.js"></script>
-    <script src="js/add-content.js"></script>
-    <script src="js/ask-preference.js"></script>
-    <section>
-        <h3>Relax on the water</h3>
-        <img src="images/Grand Bend ariel.jpg" alt="Ariel view of beach">
-        <p>Lots of room to spread out and enjoy the sun and water.</p>
-    </section>
-    <section>
-        <h3>Head to Forest</h3>
-        <img src="images/Forest.jpg" alt="Downtown">
-        <p>When you need a break from the beach you can head to the small town of Forest!</p>
-    </section>
-</main>
+    <main>
+        <script>addGreeting();</script>
+        <script>askName();</script>
+        <script>askPreference();</script>
+        <!-- <script>document.write('<h3>Welcome!<h3>');</script> -->
+        <section>
+            <h3>Relax on the water</h3>
+            <img src="images/Grand Bend ariel.jpg" alt="Ariel view of beach">
+            <p>Lots of room to spread out and enjoy the sun and water.</p>
+        </section>
+        <section>
+            <h3>Head to Forest</h3>
+            <img src="images/Forest.jpg" alt="Downtown">
+            <p>When you need a break from the beach you can head to the small town of Forest!</p>
+        </section>
+    </main>
 
-<footer>
-    <nav>
-        <ul>
-            <li>footer item</li>
-            <li>footer item</li>
-        </ul>
-    </nav>
-</footer>
+    <footer>
+        <nav>
+            <ul>
+                <li>footer item</li>
+                <li>footer item</li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
+
 </html>
