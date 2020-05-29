@@ -12,7 +12,7 @@ function addGreeting() {
     } else {
         greeting = 'Welcome!';
     }
-    return document.write('<h3>' + greeting + '</h3>');
+    return greeting;
 }
 
 function askName() {
@@ -24,12 +24,41 @@ function askPreference() {
     var response = prompt('Do you like the beach or downtown?');
     var message;
 
+    while(response !== 'beach' && response !== 'downtown'){
+        response = prompt('PLEASE ANSWER EXACT! Do you like the beach or downtown?')
+    }
     if (response === 'beach') {
-        message = 'I love the beach too!';
-    } else if (response === 'downtown') {
+        message = 'I love the beach too!'
+      } else if (response === 'downtown') {
         message = 'Shopping is fun!'
     } else {
         message = 'You can\'t go wrong while on vacation'
     }
-    return document.write('<p>' + message + '</p>');
+    return response;
+    // return document.write('<p>' + message + '</p>');
 } 
+
+function howMany(){
+    var count = prompt('Great, how many times would you like to go there?');
+
+    while(isNaN(count) || count +++''){
+        count = prompt('PLEASE ENTER A NUMBER! How many times would you like?')
+    }
+    return count;
+}
+
+function showOrder(){
+    var result = '';
+    //getItemType
+    var itemType = getItemType();
+    
+    //find how many they want
+    var orderTotal = howMany();
+    
+    //send that order to the web page
+    for ( var i = 0; i < orderTotal; i++){
+        result = result + '<p>' + itemType + '</p>';
+    }
+    return orderTotal;
+}
+
